@@ -7,7 +7,7 @@ const PostAuthor = ({ userId }) => {
   const author = users.find((user) => {
     return user.id === userId;
   });
-  console.log(author);
+
   return (
     <i>
       <span>

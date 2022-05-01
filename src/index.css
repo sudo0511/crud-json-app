@@ -21,3 +21,8 @@
   margin-left: 30px;
   margin-right: 30px;
 }
+
+.reaction-div > button:hover {
+  background-color: rgb(210, 210, 210);
+  border-radius: 50px;
+}

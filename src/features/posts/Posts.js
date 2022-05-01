@@ -3,6 +3,8 @@ import { Row, Col, Card, Typography, Button, Space } from "antd";
 import { useSelector } from "react-redux";
 import { selectAllPosts } from "./postsSlice";
 import PostAuthor from "./PostAuthor";
+import PostTime from "./PostTime";
+import ReactionButtons from "./ReactionButtons";
 
 const Posts = () => {
   const { Title, Text } = Typography;
@@ -30,6 +32,8 @@ const Posts = () => {
             {post.content}
           </Text>
           <PostAuthor userId={post.userId} />
+          <PostTime timeStamp={post.date} />
+          <ReactionButtons post={post} />
         </Col>
         <Col span={8}>
           <div className="btns">
