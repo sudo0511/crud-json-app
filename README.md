@@ -1,4 +1,4 @@
-React-Redux CRUD application to add posts and delete posts.
+React-Redux CRUD application to ADD, VIEW, EDIT and DELETE posts.
 
 -UI build using Ant-design
 
