@@ -26,3 +26,17 @@
   background-color: rgb(210, 210, 210);
   border-radius: 50px;
 }
+
+.view-post {
+  display: flex;
+  margin: 50px auto;
+  width: 500px;
+  padding: 10px;
+  flex-direction: column;
+  border: 1px solid rgb(235, 235, 235);
+  text-align: center;
+}
+
+.view-post > a > button {
+  margin: 20px auto;
+}

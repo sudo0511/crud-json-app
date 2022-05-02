@@ -5,6 +5,7 @@ import { selectAllPosts } from "./postsSlice";
 import PostAuthor from "./PostAuthor";
 import PostTime from "./PostTime";
 import ReactionButtons from "./ReactionButtons";
+import { Link } from "react-router-dom";
 
 const Posts = () => {
   const { Title, Text } = Typography;
@@ -36,10 +37,12 @@ const Posts = () => {
           <ReactionButtons post={post} />
         </Col>
         <Col span={8}>
-          <div className="btns">
-            <Button type="primary">Edit</Button>
-            <Button type="danger">Delete</Button>
-          </div>
+          <Link to={`/post/${post.id}`}>
+            <div className="btns">
+              <Button type="primary">View</Button>
+              {/* <Button type="danger">Delete</Button> */}
+            </div>
+          </Link>
         </Col>
       </Row>
     );
